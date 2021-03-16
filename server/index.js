@@ -29,6 +29,8 @@ mongoose
 
 app.get('/', (req, res) => res.send('hello!'));
 
+app.get('/api/hello', (req, res) => res.send('hello! react'));
+
 app.post('/api/users/register', (req, res) => {
   // 회원 가입에 필요한 정보를 client에서 가져와서 DB에 넣어준다.
   const user = new User(req.body);
